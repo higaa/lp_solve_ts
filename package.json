@@ -1,16 +1,24 @@
 {
   "name": "lp_solve_ts",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc; cp -R src/lp_solve dist/"
+    "build": "sh src/build_wasm.sh; tsc; cp -R src/wasm dist/"
   },
   "author": "",
   "license": "LGPL-3.0-or-later",
   "dependencies": {
+    "node": "^21.1.0",
+    "pako": "^2.1.0",
     "ts-loader": "^9.4.4",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.9",
+    "@types/pako": "^2.0.2"
   }
 }

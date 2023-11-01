@@ -1,17 +1,18 @@
 {
     "compilerOptions": {
         "lib": [
-            "es2015",
+            "es2022",
             "dom"
         ],
-        "module": "commonjs",
+        "module": "ES2022",
         "outDir": "dist",
         "declaration": true,
         "sourceMap": true,
         "strict": true,
-        "target": "es2015"
+        "target": "es2022",
+        "moduleResolution": "node",
     },
     "include": [
-        "src"
+        "src/"
     ]
 }
